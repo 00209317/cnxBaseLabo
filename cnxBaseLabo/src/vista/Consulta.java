@@ -69,8 +69,42 @@ public class Consulta extends JFrame {
         si = new JRadioButton ("si",true);
         no = new JRadioButton ("no");
         resultados = new JTable();
-        buscar = new JButton();
+        buscar = new JButton("Buscar");
+        insertar = new JButton("Insertar");
+        eliminar = new JButton("Eliminar");
+        actualizar = new JButton("Actualizar");
+        limpiar = new JButton("Limpiar");
+        
+        table = new JPanel();
+        
+        marca.addItem("FRAM");
+        marca.addItem("WIX");
+        marca.addItem("Luber Finer");
+        marca.addItem("OSK");
+        
+        existencia = new ButtonGroup();
+        existencia.add(si);
+        existencia.add(no);
+        
+    codigo.setBounds(140, 10, ANCHOC, ALTOC);
+    marca.setBounds(140, 60, ANCHOC, ALTOC);
+    stock.setBounds(140, 100, ANCHOC, ALTOC);
+    si.setBounds(140, 140, 50, ALTOC);
+    no.setBounds(210, 140, 50, ALTOC);
+    
+    buscar.setBounds(300, 10, ANCHOC, ALTOC);
+    insertar.setBounds(10, 210, ANCHOC, ALTOC);
+    actualizar.setBounds(150, 210, ANCHOC, ALTOC);   
+        
+        
     }
     
+    public void llenarTabla(){
+        
+    }
+    
+    public void eventos(){
+        
+    }
     
 }
